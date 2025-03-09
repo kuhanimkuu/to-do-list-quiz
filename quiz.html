@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    #question {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    #options {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    #options li {
+      margin-bottom: 10px;
+    }
+    #options li label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    #options li input[type="checkbox"] {
+      margin-right: 5px;
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      outline: none;
+      transition: box-shadow 0.3s;
+    }
+    #options li input[type="checkbox"]:checked {
+      background-color: #4CAF50;
+      border-color: #4CAF50;
+      box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+    }
+    #score {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    #result {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Quiz Application</h1>
+  <div id="question"></div>
+  <ul id="options"></ul>
+  <div id="score"></div>
+  <div id="result"></div>
+  <script src="quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <style>
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .item.completed {
+      text-decoration: line-through;
+      color: #ccc;
+    }
+    .item input[type="text"] {
+      flex-grow: 1;
+      margin-right: 10px;
+      padding: 5px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+    }
+    .item button {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="quiz.html">Quiz application</a>
+    <a href="to-do.html">To-Do list</a>
+  </nav>
+  <h1>To-Do List</h1>
+  <input type="text" id="newItemInput" placeholder="Add a new item" />
+  <button id="addItemButton">Add</button>
+  <div id="itemList"></div>
+<script src="to-do.js"></script>
+</body>
+</html>
